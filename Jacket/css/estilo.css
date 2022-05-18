@@ -1,0 +1,119 @@
+/*Va envolver a todas las etiquetas el asterisco*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*poenr lo de arriba en todas las paginas
+
+margin: hacer espacios de afuera 
+padding: hacer espacios de adentro
+*/
+
+body {
+    background-color: black;
+    padding: 40px;
+}
+
+/*
+. clase
+# id
+[] utilizados par aradio buttom checkbox
+
+*/
+.contenedor-principal{
+    background-color:thistle;
+    display: flex; /*hace que el contenedor sea flexible mostrar*/
+    /*
+    display solo va flex
+
+    flex: agarra una dimension
+    iz-der flex row  
+    arr-abaj flex colum
+
+    grid: permite las dos dimensiones
+    (cuadricula)
+
+    */
+    /* flex-direction:row; por defecto viene asi */
+    padding: 40px;
+}
+
+.imagen{
+    background-color: chocolate;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.imagen img{
+    width: 300px;
+    height: 700px;
+    object-fit: cover;
+}
+
+.contenedor-contenido
+{
+    background-color:azure;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*en flex-direction se pone si es column o row*/
+}
+
+.contenedor-texto{
+    color:darkblue;
+
+}
+
+.contenedor-texto h1{
+    font-size: 50px;
+}
+
+.contenedor-texto p{
+    font-size: 15px;
+}
+
+.contenedor-footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenedor-tamanio{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.contenedor-tamanio .tallas {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+
+.contenedor-tamanio .tallas p {
+   margin-left: 10px;
+   background-color: white;
+   border-radius: 100%;
+   border: 3px solid #737373;
+
+}
+
+.contenedor-tamanio .tallas p:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+ 
+ }
+
+
+
+.contenedor-enlace
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
