@@ -18,11 +18,12 @@ body {
 . clase
 # id
 [] utilizados par aradio buttom checkbox
-
 */
 .contenedor-principal{
     background-color:thistle;
-    display: flex; /*hace que el contenedor sea flexible mostrar*/
+    display: flex; 
+    padding: 40px;
+    /*hace que el contenedor sea flexible mostrar*/
     /*
     display solo va flex
 
@@ -35,9 +36,8 @@ body {
 
     */
     /* flex-direction:row; por defecto viene asi */
-    padding: 40px;
+  
 }
-
 .imagen{
     background-color: chocolate;
     width: 700px;
@@ -54,8 +54,7 @@ body {
     object-fit: cover;
 }
 
-.contenedor-contenido
-{
+.contenedor-contenido{
     background-color:azure;
     padding: 20px;
     display: flex;
@@ -66,7 +65,6 @@ body {
 
 .contenedor-texto{
     color:darkblue;
-
 }
 
 .contenedor-texto h1{
@@ -77,8 +75,7 @@ body {
     font-size: 15px;
 }
 
-.contenedor-footer
-{
+.contenedor-footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -96,7 +93,6 @@ body {
    
 }
 
-
 .contenedor-tamanio .tallas p {
    margin-left: 10px;
    background-color: white;
@@ -108,12 +104,8 @@ body {
 .contenedor-tamanio .tallas p:hover {
     background-color: cadetblue;
     cursor: pointer;
- 
  }
 
-
-
-.contenedor-enlace
-{
+.contenedor-enlace{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
