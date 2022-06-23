@@ -11,7 +11,7 @@ padding: hacer espacios de adentro
 
 body {
     background-color: black;
-    padding: 40px;
+    padding: 8rem;
 }
 
 /*
@@ -21,8 +21,10 @@ body {
 
 */
 .contenedor-principal{
-    background-color:thistle;
-    display: flex; /*hace que el contenedor sea flexible mostrar*/
+    background-color:rgb(0, 0, 0);
+    display: flex; 
+    /* margin: 4rem; */
+    /*hace que el contenedor sea flexible mostrar*/
     /*
     display solo va flex
 
@@ -39,13 +41,13 @@ body {
 }
 
 .imagen{
-    background-color: chocolate;
-    width: 700px;
+    background-color: azure;
+    width: auto;
     height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    padding: 2rem;
 }
 
 .imagen img{
@@ -57,7 +59,7 @@ body {
 .contenedor-contenido
 {
     background-color:azure;
-    padding: 20px;
+    padding: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -65,55 +67,80 @@ body {
 }
 
 .contenedor-texto{
-    color:darkblue;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color:rgb(2, 59, 92);
 }
 
 .contenedor-texto h1{
-    font-size: 50px;
+    font-size: 6rem;
 }
 
 .contenedor-texto p{
-    font-size: 15px;
+    padding-right: 4rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
 .contenedor-footer
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .contenedor-tamanio{
+    border-top: 2px solid cadetblue;
+    border-bottom: 2px solid cadetblue;
     display: flex;
     flex-direction: row;
-   
+    padding: 0.5rem 0;
 }
 
 .contenedor-tamanio .tallas {
     display: flex;
     flex-direction: row;
-   
 }
 
-
 .contenedor-tamanio .tallas p {
-   margin-left: 10px;
-   background-color: white;
-   border-radius: 100%;
-   border: 3px solid #737373;
-
+   /* margin-left: 10px; */
+   /* background-color: white;
+   border-radius: 50%;
+   border-width: 100%;
+   border: 1rem solid #737373; */
+    /* added */
+    background-color: rgba(177, 177, 177, 0.404);
+    color: #029297;
+    /* display: inline-block; */
+    border-radius: 50%;
+    width:25px;
+    height:25px;
+    padding-left:6px;
+    padding-top: 3px;
+    box-sizing: border-box;
 }
 
 .contenedor-tamanio .tallas p:hover {
     background-color: cadetblue;
+    color: white;
     cursor: pointer;
- 
  }
 
+a {
+    color: #029297;
+    text-decoration: none;
+}
+
+a:visited {
+    font-weight: 700;
+    color: rgb(1, 74, 77);
+}
 
 
 .contenedor-enlace
 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 1rem;
 }
