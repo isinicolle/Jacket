@@ -1,17 +1,17 @@
 /*Va envolver a todas las etiquetas el asterisco*/
 * {
+    font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 /*poenr lo de arriba en todas las paginas
-
 margin: hacer espacios de afuera 
 padding: hacer espacios de adentro
 */
 
 body {
     background-color: black;
-    padding: 8rem;
+    padding: 5vh;
 }
 
 /*
@@ -21,121 +21,109 @@ body {
 */
 .contenedor-principal{
     background-color:thistle;
-    display: flex; 
-    padding: 40px;
-    margin: 4rem;
-    /*hace que el contenedor sea flexible mostrar*/
+    display: flex; /*hace que el contenedor sea flexible mostrar*/
     /*
     display solo va flex
-
     flex: agarra una dimension
     iz-der flex row  
     arr-abaj flex colum
-
     grid: permite las dos dimensiones
     (cuadricula)
-
     */
-    /* flex-direction:row; por defecto viene asi */}
-    
+    /* flex-direction:row; por defecto viene asi */
+    padding: 5vh;
+}
+
 .imagen{
-    background-color: azure;
-    width: auto;
-    height: 700px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 2rem;
+    background-color: chocolate;
+    display: flex;
+    flex-grow: 0;
+    height: 80vh;
+    justify-content: center;
+    width: 20vw;
 }
 
 .imagen img{
-    width: 300px;
-    height: 700px;
     object-fit: cover;
+    width: 100%;
 }
 
-.contenedor-contenido{
-    background-color:azure;
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.contenedor-contenido
+{
     /*en flex-direction se pone si es column o row*/
-}
-
-.contenedor-texto{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    color:rgb(2, 59, 92);
-}
-
-.contenedor-texto h1{
-    font-size: 6rem;
-}
-
-.contenedor-texto p{
-    padding-right: 4rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-
-.contenedor-footer{
+    align-items: flex-end;
+    background-color:azure;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-grow: 1;
+    justify-content: flex-end;
+    padding: 20px;
 }
 
-.contenedor-tamanio{
-    border-top: 2px solid cadetblue;
-    border-bottom: 2px solid cadetblue;
+.contenedor-texto {
+    background-color: antiquewhite;
+    height: 18vh;
+    position: absolute;
+    right: 0;
+    top: 41vh;
+    width: 80vw;
+}
+
+.contenedor-texto h1 {
+    color: darkslategrey;
+    font-size: 5em;
+    font-variant: small-caps;
+    font-weight: normal;
+    line-height: 18vh;
+    margin: 0;
+    padding-left: 10%;
+}
+
+.contenedor-texto p {
+    color: darkslategrey;
+    font-style: italic;
+    padding: 2% 10%;
+}
+
+.contenedor-tamanio {
+    align-items: flex-end;
     display: flex;
     flex-direction: row;
-    padding: 0.5rem 0;
+    margin-bottom: 0.5em;
 }
 
-.contenedor-tamanio .tallas {
-    display: flex;
-    flex-direction: row;
+.contenedor-tamanio h3 {
+    color: darkslategrey;
+    font-size: 1em;
+    font-variant: small-caps;
+    padding-right: 1em;
 }
 
-.contenedor-tamanio .tallas p {
-   /* margin-left: 10px; */
-   /* background-color: white;
-   border-radius: 50%;
-   border-width: 100%;
-   border: 1rem solid #737373; */
-    /* added */
-    background-color: rgba(177, 177, 177, 0.404);
-    color: #029297;
-    /* display: inline-block; */
-    border-radius: 50%;
-    width:25px;
-    height:25px;
-    padding-left:6px;
-    padding-top: 3px;
-    box-sizing: border-box;
+.contenedor-tamanio p {
+    color: darkslategrey;
+    font-size: 0.75em;
+    font-variant: small-caps;
+    padding-right: 1em;
 }
 
-.contenedor-tamanio .tallas p:hover {
-    background-color: cadetblue;
-    color: white;
-    cursor: pointer;
- }
-
-a {
-    color: #029297;
-    text-decoration: none;
+.contenedor-tamanio p:last-child {
+    color: darkslategrey;
+    font-size: 0.75em;
+    font-variant: small-caps;
+    padding-right: 0;
 }
-
-a:visited {
-    font-weight: 700;
-    color: rgb(1, 74, 77);
-}
-
 
 .contenedor-enlace {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-top: 1rem;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.contenedor-enlace a {
+    color: darkslategrey;
+    font-size: 1em;
+    font-variant: small-caps;
+    font-weight: bold;
 }
