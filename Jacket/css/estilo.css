@@ -1,119 +1,129 @@
 /*Va envolver a todas las etiquetas el asterisco*/
 * {
+    font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 /*poenr lo de arriba en todas las paginas
-
 margin: hacer espacios de afuera 
 padding: hacer espacios de adentro
 */
 
 body {
     background-color: black;
-    padding: 40px;
+    padding: 5vh;
 }
 
 /*
 . clase
 # id
 [] utilizados par aradio buttom checkbox
-
 */
 .contenedor-principal{
     background-color:thistle;
     display: flex; /*hace que el contenedor sea flexible mostrar*/
     /*
     display solo va flex
-
     flex: agarra una dimension
     iz-der flex row  
     arr-abaj flex colum
-
     grid: permite las dos dimensiones
     (cuadricula)
-
     */
     /* flex-direction:row; por defecto viene asi */
-    padding: 40px;
+    padding: 5vh;
 }
 
 .imagen{
-    background-color: chocolate;
-    width: 700px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    
+    background-color: chocolate;
+    display: flex;
+    flex-grow: 0;
+    height: 80vh;
+    justify-content: center;
+    width: 20vw;
 }
 
 .imagen img{
-    width: 300px;
-    height: 700px;
     object-fit: cover;
+    width: 100%;
 }
 
 .contenedor-contenido
 {
-    background-color:azure;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     /*en flex-direction se pone si es column o row*/
-}
-
-.contenedor-texto{
-    color:darkblue;
-
-}
-
-.contenedor-texto h1{
-    font-size: 50px;
-}
-
-.contenedor-texto p{
-    font-size: 15px;
-}
-
-.contenedor-footer
-{
+    align-items: flex-end;
+    background-color:azure;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-grow: 1;
+    justify-content: flex-end;
+    padding: 20px;
 }
 
-.contenedor-tamanio{
+.contenedor-texto {
+    background-color: antiquewhite;
+    height: 18vh;
+    position: absolute;
+    right: 0;
+    top: 41vh;
+    width: 80vw;
+}
+
+.contenedor-texto h1 {
+    color: darkslategrey;
+    font-size: 5em;
+    font-variant: small-caps;
+    font-weight: normal;
+    line-height: 18vh;
+    margin: 0;
+    padding-left: 10%;
+}
+
+.contenedor-texto p {
+    color: darkslategrey;
+    font-style: italic;
+    padding: 2% 10%;
+}
+
+.contenedor-tamanio {
+    align-items: flex-end;
     display: flex;
     flex-direction: row;
-   
+    margin-bottom: 0.5em;
 }
 
-.contenedor-tamanio .tallas {
+.contenedor-tamanio h3 {
+    color: darkslategrey;
+    font-size: 1em;
+    font-variant: small-caps;
+    padding-right: 1em;
+}
+
+.contenedor-tamanio p {
+    color: darkslategrey;
+    font-size: 0.75em;
+    font-variant: small-caps;
+    padding-right: 1em;
+}
+
+.contenedor-tamanio p:last-child {
+    color: darkslategrey;
+    font-size: 0.75em;
+    font-variant: small-caps;
+    padding-right: 0;
+}
+
+.contenedor-enlace {
+    align-items: flex-end;
     display: flex;
     flex-direction: row;
-   
+    justify-content: flex-end;
 }
 
-
-.contenedor-tamanio .tallas p {
-   margin-left: 10px;
-   background-color: white;
-   border-radius: 100%;
-   border: 3px solid #737373;
-
-}
-
-.contenedor-tamanio .tallas p:hover {
-    background-color: cadetblue;
-    cursor: pointer;
- 
- }
-
-
-
-.contenedor-enlace
-{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.contenedor-enlace a {
+    color: darkslategrey;
+    font-size: 1em;
+    font-variant: small-caps;
+    font-weight: bold;
 }
