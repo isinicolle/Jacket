@@ -1,1 +1,1 @@
-Can you help me give stars to this repository to get the badge? (I lack 5 stars to get it) Comment on the last commit with the repository you want the star back to you haha
+Can you help me give stars to this repository to get the badge? (I lack 4 stars to get it) Comment on the last commit with the repository you want the star back to you haha
